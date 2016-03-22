@@ -1,0 +1,27 @@
+1. Visual Studio
+Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft.
+It is used to develop computer programs for Microsoft Windows, as well as web sites, web applications and web services.
+Built-in languages include C, C++ and C++/CLI (via Visual C++), VB.NET (via Visual Basic .NET), C# (via Visual C#).
+Support for other languages such as M, Python, and Ruby among others is available via language services installed separately.
+It also supports XML/XSLT, HTML/XHTML, JavaScript and CSS.
+
+2. Eclipse
+Eclipse is an IDE used primarily for Java that contains a base workspace and an extensible plug-in system for customizing the environment.
+By means of various plug-ins, Eclipse may also be used to develop applications in other programming languages:
+Ada, ABAP, C, C++, COBOL, Fortran, Haskell, JavaScript, Lasso, Natural, Perl, PHP, Prolog, Python, R,
+Ruby (including Ruby on Rails framework), Scala, Clojure, Groovy, Scheme, and Erlang.
+Development environments include the Eclipse Java development tools (JDT) for Java and Scala, Eclipse CDT for C/C++ and Eclipse PDT for PHP, among others.
+
+3. NetBeans
+NetBeans is an IDE for developing primarily with Java, but also with other languages, in particular PHP, C/C++, and HTML5.
+It is also an application platform framework for Java desktop applications and others.
+The NetBeans Platform allows applications to be developed from a set of modular software components called modules.
+Applications based on the NetBeans Platform (including the NetBeans IDE itself) can be extended by third party developers.
+
+4. Xcode
+Xcode is an IDE containing a suite of software development tools developed by Apple for developing software for OS X and iOS.
+Xcode supports C, C++, Objective-C, Objective-C++, Java, AppleScript, Python, Ruby, Rez, and Swift source code with a variety of programming models,
+including but not limited to Cocoa, Carbon, and Java.
+Third parties have added support for GNU Pascal, Free Pascal, Ada, C#, Perl, and D.
+
+Source: Wikipedia

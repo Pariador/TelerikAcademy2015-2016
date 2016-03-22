@@ -1,0 +1,1 @@
+global.requireDir = require('require-dir');

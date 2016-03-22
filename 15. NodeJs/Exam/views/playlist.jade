@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	#playlist.jumbotron
+		.row
+			.col-md-2 Title:
+			.col-md-10= playlist.title
+		.row
+			.col-md-2 Description:
+			.col-md-10= playlist.description
+		.row
+			.col-md-2 Creator:
+			.col-md-10= playlist.creator
+		.row
+			.col-md-2 Videos:
+			ul.col-md-10
+				if playlist.videos
+					each video in playlist.videos
+						li: a(href=video) video
+		.row
+			.col-md-2 Is Private:
+			.col-md-10= playlist.isPrivate
+		.row
+			.col-md-2 Can be viewed by:
+			ul.col-md-10
+				if playlist.caBeViewedBy
+					each viewer in playlist.caBeViewedBy
+						li viewer
+		.row
+			.col-md-2 Rating:
+			.col-md-10= playlist.avgRating()
+		.row
+			.col-md-2 Comments:
+			ul.col-md-10
+				if playlist.comments
+					each comment in playlist.comments
+						li comment.content

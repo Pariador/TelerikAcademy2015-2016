@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Page = "Top Algorithms";
+}
+
+@model TopAlgorithms
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>@ViewBag.Page</h1>
+        <table class="table table-striped table-hover ">
+            @foreach (var algo in Model.Algorithms)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(
+                            linkText: algo.Name,
+                            actionName: "Details",
+                            controllerName: "Algorithm",
+                            routeValues: new
+                            {
+                                Area = "Algorithms",
+                                algo.Id
+                            },
+                            htmlAttributes: new { }
+                        )
+                    </td>
+                    <td>
+                        @Html.ActionLink(
+                            linkText: $"Category: {algo.Category.Name}",
+                            actionName: "Index",
+                            controllerName: "Main",
+                            routeValues: new
+                            {
+                                Area = "Algorithms",
+                                DisplayCategoryId = algo.Category.Id
+                            },
+                            htmlAttributes: new {}
+                        )
+                    </td>
+                    <td><span class="badge">@algo.Rating</span></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

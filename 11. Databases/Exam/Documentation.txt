@@ -1,0 +1,23 @@
+NOTE: Build Solutions to get packages and stuff. :)
+
+Connection string for "PetStore" database:
+	metadata=res://*/PetStore.csdl|res://*/PetStore.ssdl|res://*/PetStore.msl;provider=System.Data.SqlClient;provider connection string="data source=.\SQLEXPRESS;initial catalog=PetStore;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
+
+Connection string for "SocialNetwork" database:
+	Data Source=.\SQLEXPRESS;Initial Catalog=SocialNetwork; Integrated Security=true" providerName="System.Data.SqlClient
+
+Relationships for "PetStore" database:
+	Pets to Species -> One to Many
+	Pets to Colors -> One to Many
+	Species to Countries -> One to Many
+	Species to Products -> Many to Many
+	Products to Categories -> One to Many
+
+Relationships for "SocialNetwork" database:
+	UserProfiles to Images -> One to Many
+	UserProfiles to Posts -> Many to Many
+	UserProfiles to FrindUserProfiles -> Many to Many. The mid table for this relationship is the FriendShip table. I think this description is right. :D
+	UserProfiles to ChatMessages -> One to Many
+	ChatMessages to Friendships -> One to Many
+
+JSON Result files location: (fill in here)

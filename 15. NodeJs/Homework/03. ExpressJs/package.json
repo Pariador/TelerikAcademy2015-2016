@@ -1,0 +1,18 @@
+{
+  "name": "ExpressHW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev-start": "nodemon -q server.js",
+    "debug": "node-debug --no-preload server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "require-dir": "^0.3.0"
+  }
+}

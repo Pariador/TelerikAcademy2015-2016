@@ -1,0 +1,41 @@
+body{
+	/*margin: 0;*/
+
+	background-color: #a9a9a9;
+	color: black;
+}
+body > header > nav > ul{
+	list-style-type: none;
+}
+h1{
+	color: #f9f8d1;
+}
+body > header > nav a, body > header > nav a:visited{
+	color: white;
+	
+	font-size: 25px;
+	font-weight: bold;
+}
+body > header > nav li:not(:last-child) > a, body > header > nav li:not(:last-child) > a:visited{
+	text-decoration: none;
+}
+body > header > nav a:hover, body > header > nav a:visited:hover{
+	background-color: #d3d3d3;
+}
+body > section a, body > section a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+body > header > h1{
+	font-size: 48px;
+}
+body > section  h1{
+	font-size: 30px;
+}
+body article > footer{
+	font-size: 14px;
+}
+body > header, body > footer{
+	text-align: center;
+}

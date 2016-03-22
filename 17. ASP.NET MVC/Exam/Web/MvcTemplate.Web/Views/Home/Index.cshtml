@@ -1,0 +1,56 @@
+﻿@using MvcTemplate.Web.InputModels
+@model MvcTemplate.Web.ViewModels.Home.HomeViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <h4 class="text-danger">@ViewBag.Error</h4>
+    <h4 class="text-success">@ViewBag.Success</h4>
+    @Html.Partial("_NewIdea", new NewIdea())
+
+    @using (Html.BeginForm("Index", "Home", new {}, FormMethod.Get, new {}))
+    {
+
+        <div class="row form-group">
+            <div class="col-md-1">@Html.LabelFor(model => model.OrderBy, "Order by: ", new {@class = "control-label"})</div>
+            <div class="col-md-2">@Html.EnumDropDownListFor(model => model.OrderBy, new {@class = "form-control"})</div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-1">@Html.LabelFor(model => model.Filter, "Search: ", new { @class = "control-label" })</div>
+            <div class="col-md-2">@Html.TextBoxFor(model => model.Filter, new { @class = "form-control" })</div>
+
+        </div>
+        <div class="row form-group">
+            <div class="col-md-1">@Html.LabelFor(model => model.CurrentPage, "Page: ", new {@class = "control-label"})</div>
+            <div class="col-md-2">@Html.EditorFor(model => model.CurrentPage, new {@class = "form-control"})</div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-md-12">
+                <input class="btn btn-primary"type="submit" value="Filter"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                @foreach (var idea in Model.Ideas)
+                {
+                    <div class="row">
+                        <div>
+                            @*@Ajax.ActionLink("Vote 1", "Vote", "Votes", new {VotePoints = 1, IdeaId = idea.Id}, new AjaxOptions
+                            {
+                                HttpMethod = "post",
+                                UpdateTargetId = "votes"
+                            }, new {@class="btn btn-info"})*@
+                            @Html.ActionLink("Vote 1", "Vote", "Votes", new {area = "", VotePoints = 1, IdeaId = idea.Id}, new {@class="btn btn-info"})
+                        </div>
+                        <h3 class="text-info">Votes: <span id="votes">@idea.VotesCount</span> @idea.Title</h3>
+                        <p>@Html.Raw(idea.Content)</p>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+</div>

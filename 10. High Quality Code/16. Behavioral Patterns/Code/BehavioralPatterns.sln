@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityApp", "BehavioralPatterns\ChainOfResponsibilityApp.csproj", "{4F9C1A9A-0B9B-4A15-8F87-555FCDBD801D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{3C2A8217-5DC8-4D36-A369-DDB92425B008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyApp", "StrategyApp\StrategyApp.csproj", "{3471FE8A-70F8-48E0-9AB7-4450C4F4A09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{DB098929-4D96-45B4-81F4-70C2632B1EF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F9C1A9A-0B9B-4A15-8F87-555FCDBD801D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9C1A9A-0B9B-4A15-8F87-555FCDBD801D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9C1A9A-0B9B-4A15-8F87-555FCDBD801D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9C1A9A-0B9B-4A15-8F87-555FCDBD801D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2A8217-5DC8-4D36-A369-DDB92425B008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2A8217-5DC8-4D36-A369-DDB92425B008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2A8217-5DC8-4D36-A369-DDB92425B008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2A8217-5DC8-4D36-A369-DDB92425B008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3471FE8A-70F8-48E0-9AB7-4450C4F4A09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3471FE8A-70F8-48E0-9AB7-4450C4F4A09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3471FE8A-70F8-48E0-9AB7-4450C4F4A09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3471FE8A-70F8-48E0-9AB7-4450C4F4A09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB098929-4D96-45B4-81F4-70C2632B1EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB098929-4D96-45B4-81F4-70C2632B1EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB098929-4D96-45B4-81F4-70C2632B1EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB098929-4D96-45B4-81F4-70C2632B1EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

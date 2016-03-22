@@ -1,0 +1,116 @@
+/*<set up>*/
+body, ul, menu, li, h1{
+	margin: 0;
+	padding: 0;
+
+	font: normal normal normal 12px/12px sans-serif;
+}
+menu, ul{
+	list-style-type: none;
+}
+/*</set up>*/
+body{
+	background-color: #1E3741;
+
+	padding-top: 7px;
+	/*padding-left: 6px;*/
+}
+
+/*Nav - styles*/
+nav{
+	margin-bottom: 12px;
+}
+nav li{
+	display: inline-block;
+
+	margin-left: 1px;
+}
+nav li:not(#current){
+	background-color: #4B5F67;
+
+	box-sizing: border-box;
+	padding: 9px 11px;
+}
+nav li:not(#current) > a{
+	color: #8FA6AE;
+}
+nav li:not(#current):not(#sport) > a{
+	text-decoration: none;
+}
+#current{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 9px;
+}
+#current > a{
+	color: white;
+	text-decoration: none;
+}
+#current + li > a{
+	text-decoration: underline;
+}
+/*Main article - styles*/
+.contents{
+	display: inline-block;
+	width: 235px;
+}
+.contents > h1, .contents li, #current{
+	padding-left: 6px;
+}
+.contents > h1{
+	background-color: #00968C;
+	color: white;
+
+	font-size: 11px;
+
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contents li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contents li:not(:last-child){
+	box-sizing: border-box;
+
+	border-bottom: 1px solid #3a4f58;
+}
+.contents a{
+	color: #A8B1AF;
+	text-decoration: none;
+
+	line-height: 14px;
+}
+.contents li:nth-child(1) > a{
+	display: block;
+	width: 205px;
+}
+.contents li:nth-child(2) > a{
+	display: block;
+	width: 211px;
+}
+.contents li:nth-child(3) > a{
+	display: block;
+	width: 257px;
+}
+.contents li:nth-child(4) > a{
+	display: block;
+	width: 209px;
+}
+.content{
+	/*background-color: yellowgreen;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 343px;
+	height: 251px;
+
+	background-image: url(images/video-placeholder.png);
+	background-repeat: no-repeat;
+}
+video{
+	display: none;
+
+	width: 100%;
+	height: 100%;
+}

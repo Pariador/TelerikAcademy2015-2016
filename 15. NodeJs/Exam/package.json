@@ -1,0 +1,22 @@
+{
+  "name": "NodeExam",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev-start": "nodemon -q server.js",
+    "debug": "node-debug --no-preload server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "js-cache": "^1.0.2",
+    "mongoose": "^4.3.5",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "require-dir": "^0.3.0",
+    "underscore": "^1.8.3"
+  }
+}

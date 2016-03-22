@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	form.jumbotron(method='post')
+		legend Create playlist
+		.formgroup.row
+			.col-md-2: label.control-label(for='titleInput') Title:
+			.col-md-10: input#titleInput.form-control(type='text', name='title', placeholder='Title' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='descriptionInput') Description:
+			.col-md-10: input#descriptionInput.form-control(type='text', name='description', placeholder='Description' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='videosInput') Videos (", " separated):
+			.col-md-10: input#videosInput.form-control(type='text', name='videos', placeholder='Videos')
+		.formgroup.row
+			.col-md-2: label.control-label(for='categoryInput') Category:
+			.col-md-10: select#categoryInput.form-control(type='text', name='category', required)
+				option(value='test') test
+				option(value='Favorites') Favorites
+				option(value='Watch Later') Watch Later
+				option(value='Music') Music
+				option(value='Video Games') Video Games
+		.formgroup.row
+			.col-md-2: label.control-label(for='lastNameInput') Is Private:
+			.col-md-10: input#lastNameInput.form-control(type='checkbox', name='isPrivate', value='true' checked)
+		input.btn.btn-primary(type='submit')

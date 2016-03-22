@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Page = "All Categories";
+}
+
+@model AllCategories
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>@ViewBag.Page</h1>
+        <table class="table table-striped table-hover ">
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(
+                            linkText: $"Category: {category.Name}",
+                            actionName: "Index",
+                            controllerName: "Main",
+                            routeValues: new
+                            {
+                                Area = "Algorithms",
+                                DisplayCategoryId = category.Id
+                            },
+                            htmlAttributes: new {}
+                            )
+                    </td>
+                    <td>Algorithms: @category.AlgotithmsCount</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

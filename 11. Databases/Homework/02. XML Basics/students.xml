@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+<st:students xmlns:st="urn:students"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:students students.xsd">
+
+	<st:student faculty-number="112334" birth-date="1993-09-24">
+		<st:name>John</st:name>
+		<st:gender>male</st:gender>
+		<st:phone>123456789012345</st:phone>
+		<st:email>john@doe.com</st:email>
+		<st:course>Programming</st:course>
+		<st:speciality>C#</st:speciality>
+		<st:exams>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+		</st:exams>
+		<st:submission>
+			<st:date>2015-01-17</st:date>
+			<st:score>78</st:score>
+			<st:comment>noice</st:comment>
+		</st:submission>
+	</st:student>
+	<st:student faculty-number="112334" birth-date="1993-09-24">
+		<st:name>Anna</st:name>
+		<st:gender>male</st:gender>
+		<st:phone>123456789012345</st:phone>
+		<st:email>john@doe.com</st:email>
+		<st:course>Programming</st:course>
+		<st:speciality>C#</st:speciality>
+		<st:exams>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+		</st:exams>
+		<st:submission>
+			<st:date>2015-01-17</st:date>
+			<st:score>78</st:score>
+			<st:comment>noice</st:comment>
+		</st:submission>
+	</st:student>
+	<st:student faculty-number="112334" birth-date="1993-09-24">
+		<st:name>Steven</st:name>
+		<st:gender>male</st:gender>
+		<st:phone>123456789012345</st:phone>
+		<st:email>john@doe.com</st:email>
+		<st:course>Programming</st:course>
+		<st:speciality>C#</st:speciality>
+		<st:exams>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+		</st:exams>
+		<st:submission>
+			<st:date>2015-01-17</st:date>
+			<st:score>78</st:score>
+			<st:comment>noice</st:comment>
+		</st:submission>
+	</st:student>
+	<st:student faculty-number="112334" birth-date="1993-09-24">
+		<st:name>Danny</st:name>
+		<st:gender>male</st:gender>
+		<st:phone>123456789012345</st:phone>
+		<st:email>john@doe.com</st:email>
+		<st:course>Programming</st:course>
+		<st:speciality>C#</st:speciality>
+		<st:exams>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+		</st:exams>
+		<st:submission>
+			<st:date>2015-01-17</st:date>
+			<st:score>78</st:score>
+			<st:comment>noice</st:comment>
+		</st:submission>
+	</st:student>
+	<st:student faculty-number="112334" birth-date="1993-09-24">
+		<st:name>Beth</st:name>
+		<st:gender>male</st:gender>
+		<st:phone>123456789012345</st:phone>
+		<st:email>john@doe.com</st:email>
+		<st:course>Programming</st:course>
+		<st:speciality>C#</st:speciality>
+		<st:exams>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+			<st:exam>
+				<st:name>C# Basic</st:name>
+				<st:tutor>Thor</st:tutor>
+				<st:score>7</st:score>
+			</st:exam>
+		</st:exams>
+		<st:submission>
+			<st:date>2015-01-17</st:date>
+			<st:score>78</st:score>
+			<st:comment>noice</st:comment>
+		</st:submission>
+	</st:student>
+</st:students>

@@ -1,0 +1,59 @@
+body{
+	margin: 0px;
+	padding: 0px;
+
+	font-family: sans-serif;
+	background-color: yellowgreen;
+}
+
+table{
+	background-color: #595959;
+	margin: 100px;
+}
+
+th{
+	color: #b0b7b0;
+
+	font-size: 28px;
+	font-weight: normal;
+	text-align: left;
+}
+
+td{
+	padding-top: 21px;
+}
+
+.ticket-label{
+	color: white;
+	font-style: italic;
+	vertical-align: top;
+	padding-right: 33px;
+}
+
+a, a:visited{
+	color: #e0d383;
+	text-decoration: none;
+}
+
+#name{
+	background-image: url(status-icon.png);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+#support{
+	color: #cf0001;
+}
+
+#response-time, #last-action{
+	color: #979F92;
+}
+
+#last-action{
+	margin-bottom: 21px;
+}
+
+#status{
+	color: #ca6a21;
+}

@@ -1,0 +1,28 @@
+body{
+	background-color: teal;
+	margin: 0;
+	padding-top: 100px;
+	padding-left: 100px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.selection-content, #main-list{
+	padding: 0;
+}
+.selection > .selection-content{
+	display: none;
+}
+.selection{
+	display: inline-block;
+}
+.selection:hover > .selection-title{
+	text-decoration: underline;
+}
+.selection:hover > .selection-content{
+	display: block;
+	color: grey;
+	padding-left: 10px;
+}

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	form.jumbotron(method='post')
+		legend Register
+		.formgroup.row
+			.col-md-2: label.control-label(for='usernameInput') Username:
+			.col-md-10: input#usernameInput.form-control(type='text', name='username', placeholder='Username' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='passwordInput') Password:
+			.col-md-10: input#passwordInput.form-control(type='text', name='password', placeholder='Password' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='emailInput') Email:
+			.col-md-10: input#emailInput.form-control(type='email', name='email', placeholder='Email' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='firstNameInput') First Name:
+			.col-md-10: input#firstNameInput.form-control(type='text', name='firstName', placeholder='First Name' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='lastNameInput') Last Name:
+			.col-md-10: input#lastNameInput.form-control(type='text', name='lastName', placeholder='Last Name' required)
+		.formgroup.row
+			.col-md-2: label.control-label(for='avatarInput') Avatar Link:
+			.col-md-10: input#avatarInput.form-control(type='text', name='avatar', placeholder='Avatar Link')
+		.formgroup.row
+			.col-md-2: label.control-label(for='facebookInput') Facebook Account:
+			.col-md-10: input#facebookInput.form-control(type='text', name='facebook', placeholder='Facebook Account')
+		.formgroup.row
+			.col-md-2: label.control-label(for='youtubeInput') Youtube Accout:
+			.col-md-10: input#youtubeInput.form-control(type='text', name='youtube', placeholder='YouTube Accout')
+		input.btn.btn-primary(type='submit')

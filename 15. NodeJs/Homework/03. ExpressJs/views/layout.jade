@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title= title
+		link(rel='stylesheet', href='styles/app.css')
+	body
+		nav: ul
+			li: a(href='/') Home
+			li: a(href='/login') Login
+			li: a(href='/register') Register
+			li: a(href='/buy') Buy
+			li: a(href='/sell') Sell
+			li: a(href='/info') Info
+
+		block content
+
+		footer #{title}&copy;

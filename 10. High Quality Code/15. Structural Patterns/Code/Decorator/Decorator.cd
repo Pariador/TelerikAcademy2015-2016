@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Decorator.CaramelDecorator">
+    <Position X="1.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CaramelDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Decorator.ChocolateDecorator">
+    <Position X="4" Y="6.75" Width="1.75" />
+    <InheritanceLine Type="Decorator.CookieDecorator" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.75" Y="6.19" />
+        <Point X="3.75" Y="6.45" />
+        <Point X="4.875" Y="6.45" />
+        <Point X="4.875" Y="6.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ChocolateDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Decorator.Cookie" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <AssociationLine Name="ICookie" Type="Decorator.ICookie" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.531" Y="4.25" />
+        <Point X="6.531" Y="3.18" />
+        <Point X="5.188" Y="3.18" />
+        <Point X="5.188" Y="2.805" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Cookie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ICookie" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Decorator.CookieDecorator">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <AssociationLine Name="ICookie" Type="Decorator.ICookie" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.469" Y="4.25" />
+        <Point X="3.469" Y="3.18" />
+        <Point X="4.562" Y="3.18" />
+        <Point X="4.562" Y="2.805" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CookieDecorator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ICookie" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Decorator.ICookie">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ICookie.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

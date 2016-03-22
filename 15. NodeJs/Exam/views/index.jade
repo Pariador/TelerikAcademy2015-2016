@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	if !playlists
+		h1 There are no playlists.
+	else
+		h1 Top playlists
+		ul
+			each playlist in playlists
+				li: h3: a(href='/playlists/#{playlist._id}') #{playlist.title} - Rating: #{playlist.rating}

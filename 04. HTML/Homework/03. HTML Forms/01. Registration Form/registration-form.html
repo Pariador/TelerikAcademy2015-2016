@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<main>
+		<form id="registration-form" method="post" action="some-script.php">
+			<table border="1" cellspacing="0" cellpadding="5">
+				<tr>
+					<th><label id="label-last-name" for="input-last-name">Last Name</label></th>
+					<td><input type="text id="input-last-name"" name="last-name"></td>
+				</tr>
+				<tr>
+					<th><label id="label-first-name" for="input-first-name">First Name</label></th>
+					<td><input type="text" id="input-first-name" name="first-name"></td>
+				</tr>
+				<tr>
+					<th><label id="label-address" for="input-address">Address</label></th>
+					<td><textarea id="input-address" name="address"></textarea></td>
+				</tr>
+				<tr>
+					<th><label id="label-city" for="input-city">City</label></th>
+					<td> 
+						<input type="text" id="input-city" name="city">
+						<label id="label-state">
+							<span>State </span><input type="text" id="input-state" name="state">
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th><label id="label-postal" for="input-postal">Zip/Postal Code</label></th>
+					<td><input type="text" id="input-postal" name="postal"></td>
+				</tr>
+				<tr>
+					<th><label id="label-country" for="input-country">Country</label></th>
+					<td>
+						<select name="country" id="input-country">
+							<option value="bg">Bulgaria</option>
+							<option value="not-bg">Not Bulgaria</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th><label id="label-phone" for="country-code">Phone(country code, area code, number)</label></th>
+					<td>
+						<span>(+<input type="tel" id="country-code" name="country-code">)</span>
+						<input type="tel" id="area-code" name="area-code">
+						<input type="tel" id="number" name="number">
+					</td>
+				</tr>
+				<tr>
+					<th><label id="label-email" for="input-email">E-mail</label></th>
+					<td><input type="email" id="input-email" name="email"></td>
+				</tr>
+				<tr>
+					<th><label id="label-birth-date" for="input-birth-date">Birth date</label></th>
+					<td><input type="date" id="input-birth-date" name="birth-date"></td>
+				</tr>
+				<tr>
+					<th><label id="label-gender" for="input-gender">Gender</label></th>
+					<td>
+						<select name="gender" id="input-gender">
+							<option value="m">Male</option>
+							<option value="f">Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Starting date</th>
+					<td>
+						<label>
+							<input type="radio" name="start" value="spring"><span>Spring 2015</span>
+						</label>	
+						<label>
+							<input type="radio" name="start" value="summer"><span>Summer 2015</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<th><label id="label-C/Q" for="input-C/Q">Comments/Questions</label></th>
+					<td><textarea id="input-C/Q" name="C/Q"></textarea></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2" bgcolor="lightBlue">
+						<input id="input-submit" type="submit">
+						<input id="input-reset" type="reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</main>
+</body>
+</html>

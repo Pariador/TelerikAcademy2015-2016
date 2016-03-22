@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	padding: 0;
+	font: normal normal normal 13px tahoma;
+	background-color: teal;
+}
+
+table{
+	margin: 100px;
+	border-collapse: collapse;
+}
+tr > :not(:first-child):not(:last-child){
+	border-left-width: 2px;
+	border-left-style: ridge;
+	border-right-width: 2px;
+	border-right-style: ridge;
+}
+th{
+	background-color: #51b406;
+	border-color: #51b406;
+
+	border-bottom: 1px solid #214d02;
+
+	text-align: left;
+	font-weight: normal;
+	color: white;
+}
+
+thead > tr > :first-child{
+	border-radius: 0.4em 0em 0em 0em;
+}
+thead > tr > :last-child{
+	border-radius: 0em 0.4em 0em 0em;
+}
+tbody > :last-child > :last-child{
+	border-radius: 0em 0em 0.4em 0em;
+}
+tbody > :last-child > :first-child{
+	border-radius: 0em 0em 0em 0.4em;
+}
+
+tr > :not(:last-child){
+	padding: 7px 35px 7px 5px;
+}
+tr > :last-child{
+	padding-right: 12px;
+}
+
+tbody > :nth-child(odd){
+	background-color: white;
+}
+tbody > :nth-child(even){
+	background-color: #ececd8;
+}
+
+.country{
+	background-size: 18px 11px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	padding-left: 27px !important;
+}
+.germany{
+	background-image: url(flag-images/flag-germany.png);
+}
+.mexico{
+	background-image: url(flag-images/flag-mexico.png);
+}
+.uk{
+	background-image: url(flag-images/flag-uk.png);
+}

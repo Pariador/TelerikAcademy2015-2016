@@ -1,0 +1,19 @@
+body{
+	color: #0094ff;
+	font-family: consolas;
+}
+
+main > h1{
+	margin-top: 14px;
+	margin-bottom: 0px;
+}
+.h-1st-char{
+	font-family: Edwardian Script ITC;
+}
+.h-body{
+	font-size: 16px;
+}
+
+main > p{
+	margin-top: 0px;
+}

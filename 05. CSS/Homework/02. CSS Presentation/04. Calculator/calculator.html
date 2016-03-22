@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="calculator-styles.css">
+</head>
+<body>
+	<div id="window">
+		<div id="win-name">Calculator</div>
+		<div id="win-control">
+<!-- 			<span id="minimize">_</span>
+			<span id="full-screen">#</span>
+			<span id="close">X</span> -->
+			<button>_</button>
+			<button>&#9633;</button>
+			<button>X</button>
+		</div>
+		<div id="content">
+			<div id="menu">
+				<span class="menu-item"><span class="first-letter">V</span>iew</span>
+				<span class="menu-item"><span class="first-letter">E</span>dit</span>
+				<span class="menu-item"><span class="first-letter">H</span>elp</span>
+			</div>
+			<div id="calc-body">
+				<div id="screen">
+					<span id="screen-content">8854455</span>
+				</div>
+				<table id="binary">
+					<tbody>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+							<td>0000</td>
+						</tr>
+						<tr>
+							<td colspan="4">63</td>
+							<td colspan="3">47</td>
+							<td colspan="1">32</td>
+						</tr>
+						<tr>
+							<td>0000</td>
+							<td>0000</td>
+							<td>1000</td>
+							<td>0111</td>
+							<td>0001</td>
+							<td>1011</td>
+							<td>1011</td>
+							<td>0111</td>
+						</tr>
+						<tr>
+							<td colspan="4">31</td>
+							<td colspan="3">15</td>
+							<td colspan="1">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="controls">
+					<div id="controls-aside">
+						<div id="numeral-sys" class="radio-control">
+							<div>
+								<input type="radio" id="hex" name="numeral-sys">
+								<label for="hex">Hex</label>
+							</div>
+							<div>
+								<input type="radio" id="dec" name="numeral-sys">
+								<label for="dec">Dec</label
+							></div>
+							<div>
+								<input type="radio" id="oct" name="numeral-sys">
+								<label for="oct">Oct</label>
+							</div>
+							<div>
+								<input type="radio" id="bin" name="numeral-sys">
+								<label for="bin">Bin</label>
+							</div>
+						</div>	
+						<div id="bit-size" class="radio-control">
+							<div>
+								<input type="radio" id="qw" name="bit-size">
+								<label for="qw">QWord</label>
+							</div>
+							<div>
+								<input type="radio" id="dw" name="bit-size">
+								<label for="dw">Dword</label>
+							</div>
+							<div>
+								<input type="radio" id="word" name="bit-size">
+								<label for="word">Word</label>
+							</div>
+							<div>
+								<input type="radio" id="byte" name="bit-size">
+								<label for="byte">Byte</label>
+							</div>
+						</div>
+					</div>
+					<div id="controls-buttons">
+						<div>
+							<button></button>
+							<button>Mod</button>
+							<button>A</button>
+							<button>MC</button>
+							<button>MR</button>
+							<button>MS</button>
+							<button>M+</button>
+							<button>M-</button>
+						</div>
+						<div>
+							<button>(</button>
+							<button>)</button>
+							<button>B</button>
+							<button>&#8592;</button>
+							<button>CE</button>
+							<button>V</button>
+							<button>&plusmn;</button>
+							<button>&radic;</button>
+						</div>
+						<div>
+							<button>RoL</button>
+							<button>RoR</button>
+							<button>C</button>
+							<button>7</button>
+							<button>8</button>
+							<button>9</button>
+							<button>/</button>
+							<button>%</button>
+						</div>
+						<div>
+							<button>Or</button>
+							<button>Xor</button>
+							<button>D</button>
+							<button>4</button>
+							<button>5</button>
+							<button>6</button>
+							<button>*</button>
+							<button>1/x</button>
+						</div>
+						<div>
+							<button>Lsh</button>
+							<button>Rsh</button>
+							<button>E</button>
+							<button>1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>-</button>
+							<button>=</button>
+						</div>
+						<div>
+							<button>Not</button>
+							<button>And</button>
+							<button>F</button>
+							<button>0</button>
+							<button>.</button>
+							<button>+</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

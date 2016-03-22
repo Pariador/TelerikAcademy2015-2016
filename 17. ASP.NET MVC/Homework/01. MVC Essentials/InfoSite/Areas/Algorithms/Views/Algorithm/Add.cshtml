@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Page = "Add Algorithm";
+}
+
+@model AddAlgorithm
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>@ViewBag.Page</h1>
+        @using (Html.BeginForm("Add", "Algorithm", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.Name, new { @class = "control-label" }):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextBoxFor(m => m.Algorithm.Name, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.CategoryId, new { @class = "control-label" }):
+                </div>
+                <div class="col-md-3">
+                    @Html.DropDownListFor(
+                        expression: m => m.Algorithm.CategoryId,
+                        selectList: new SelectList(Model.Categories, "Id", "Name", Model.Categories.First().Id), 
+                        htmlAttributes: new { @class = "form-control" }
+                    )
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.Author, new { @class = "control-label" }):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextBoxFor(m => m.Algorithm.Author, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.Summary, new {@class = "control-label"}):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextAreaFor(m => m.Algorithm.Summary, new {@class = "form-control"})
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.Description, new {@class = "control-label"}):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextAreaFor(m => m.Algorithm.Description, new {@class = "form-control"})
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.PseudoCode, new {@class = "control-label"}):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextAreaFor(m => m.Algorithm.PseudoCode, new {@class = "form-control"})
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Algorithm.ImageUrl, new { @class = "control-label" }):
+                </div>
+                <div class="col-md-3">
+                    @Html.TextBoxFor(m => m.Algorithm.ImageUrl, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input class="btn btn-primary" type="submit" value="Add" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

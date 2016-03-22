@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Teleimot.Web.WCF.Top" CodeBehind="Top.svc.cs" %>

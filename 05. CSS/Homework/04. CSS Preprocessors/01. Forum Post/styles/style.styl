@@ -1,0 +1,110 @@
+// Reset
+body, h1, h2, p, ul, ol , menu, li, input, button
+	padding: 0
+	margin: 0
+ul, ol, menu
+	list-style-type: none
+br
+	display: none
+
+// Styles
+defaultFontSize = 14px
+defaultFontFalmily = Ariel
+defaultFont = normal normal normal defaultFontSize\/defaultFontSize defaultFontFalmily
+defaultColor = white
+
+body
+	background-color: purple
+	
+	padding-top: 18px
+	padding-left: 11px
+	
+	font: defaultFont
+	color: defaultColor
+#header-container
+	background-color: teal
+	
+	position: relative
+#logo-container
+	a, img
+		display: block
+#reg-form-container
+	position: absolute
+	top: 0
+	right: 25px
+
+	div
+		text-align: right
+	input
+		inputFontSize = defaultFontSize - 3px
+		
+		width: 130px
+		height: 20px
+		
+		margin-left: 5px
+		
+		box-sizing: border-box
+		background-color: #b35ef3
+		border: 1px solid #834bad
+		border-radius: 10px
+		padding: 2px 5px
+
+		font-size: inputFontSize
+		line-height: inputFontSize
+		
+		&:last-child
+			margin-top: 5px
+	br
+		display: initial
+	button
+		background-color: #b35ef3
+		border: 2px outset #bb90dc
+		border-radius: 10px
+		padding: 5px 10px
+	
+		
+		color: defaultColor
+.nav-list
+	> li
+		position: relative
+		
+		> a
+			font-size: 20px
+			line-height: 20px
+
+			color: defaultColor
+			text-decoration: none
+		> .nav-list
+			display: none
+		&:hover
+			> a
+				color: gray
+				text-decoration: underline
+			> .nav-list
+				display: block
+#main-nav-list
+	border: 2px solid black
+	border-radius: 14px
+	padding: 12px 0
+
+	font-size: 0
+	> li
+		font-size: defaultFontSize
+		display: inline-block
+		vertical-align: top
+		
+		margin-left: 10px
+.sub-nav-list
+	position: absolute
+	top: 23px
+	left: 0			
+
+	background-color: rgba(179, 94, 243, 0.9)
+	border-radius: 5px
+	
+	> li
+		margin: 0 15px
+		padding: 10px 0
+	
+		border-bottom: 1px solid black
+	

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. FindExecutables", "02. FindExecutables\02. FindExecutables.csproj", "{548197AD-0032-47A0-A8D8-B4142CF9934C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. FilesAndFolders", "03. FilesAndFolders\03. FilesAndFolders.csproj", "{6B303CA0-52E7-475F-BA10-102946C0256E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Tree", "01. Tree\01. Tree.csproj", "{CC99F350-DB22-46E0-9196-802FA264454C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548197AD-0032-47A0-A8D8-B4142CF9934C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548197AD-0032-47A0-A8D8-B4142CF9934C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548197AD-0032-47A0-A8D8-B4142CF9934C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548197AD-0032-47A0-A8D8-B4142CF9934C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B303CA0-52E7-475F-BA10-102946C0256E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B303CA0-52E7-475F-BA10-102946C0256E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B303CA0-52E7-475F-BA10-102946C0256E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B303CA0-52E7-475F-BA10-102946C0256E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC99F350-DB22-46E0-9196-802FA264454C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC99F350-DB22-46E0-9196-802FA264454C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC99F350-DB22-46E0-9196-802FA264454C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC99F350-DB22-46E0-9196-802FA264454C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

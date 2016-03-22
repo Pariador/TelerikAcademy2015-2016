@@ -1,0 +1,8 @@
+﻿@model MvcTemplate.Web.InputModels.NewIdea
+
+<h2>I suggest you...</h2>
+@using (Html.BeginForm("Create", "Ideas", new { area = string.Empty }, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Post" class="btn btn-primary" />
+}

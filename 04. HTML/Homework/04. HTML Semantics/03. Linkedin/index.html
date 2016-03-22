@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LinkedIn</title>
+</head>
+<body>
+	<header>
+		<h1><a href="/">LinkedIn</a></h1>
+	</header>
+	<nav>
+		<a href="">Home</a>
+		<a href="">What is LinkedIn?</a>
+		<a href="">Join Today</a>
+	</nav>
+	<aside id="log-in">
+		<h1>Sign in</h1>
+		<form action="some-script.php" method="post" name="sign-in">
+			<div id="email">
+				<label for="sign-in-email">Email:</label>
+				<input type="email" id="sign-in-email" name="email">
+			</div>
+			<div id="password">
+				<label for="sign-in-password">Password</label>
+				<input type="password" id="sign-in-password" name="password">
+			</div>
+			<input type="submit" value="Sign in">
+		</form>
+	</aside>
+	<main>
+		<article>
+			<header>
+				<h1>Over 175 million professionals use LinkedIn to
+				exchange information, ideas and opprtunities</h1>
+			</header>
+			<ul>
+				<li>Stay informed about your contacts and industry</li>
+				<li>Find the people &amp; knowledge you need to achieve your goals</li>
+				<li>Control your professional identity online</li>
+			</ul>
+		</article>
+		<section id="sign-up">
+			<header>
+				<h1>Join LinkedIn Today</h1>
+				<h2>Sign Up</h2>
+			</header>
+			<form action="some-script.php" method="post" name="sign-up">
+				<div>
+					<label for="input-first-name" id="label-first-name">First Name:</label>
+					<input type="text" id="input-first-name" name="first-name">
+				</div>
+				<div>
+					<label for="input-last-name" id="label-last-name">Last Name:</label>
+					<input type="text" id="input-last-name" name="last-name">
+				</div>
+				<div>
+					<label for="sign-up-email">Email:</label>
+					<input type="email" id="sign-up-email" name="email">
+				</div>
+				<div>
+					<label for="sign-up-password">Password:</label>
+					<input type="password" id="sign-up-password" name="password">
+					<span>6 or more characters</span>
+				</div>
+				<input type="submit" value="Join Now">
+			</form>
+			<footer>
+				<span>Alredy on LinedIn?</span>
+				<a href="">Sign in.</a>
+			</footer>
+		</section>
+	</main>
+	<footer>
+		<h1>Search for someone by name:</h1>
+		<form action="some-script.php" method="get" name="find-person">
+			<div>
+				<label for="find-first-name">First Name</label>
+				<input type="text" id="find-first-name" name="first-name" placeholder="First Name">
+			</div>
+			<div>
+				<label for="find-last-name">First Name</label>
+				<input type="text" id="find-last-name" name="last-name" placeholder="Last Name">
+			</div>
+			<input type="submit" value="Go">
+		</form>
+	</footer>
+</body>
+</html>

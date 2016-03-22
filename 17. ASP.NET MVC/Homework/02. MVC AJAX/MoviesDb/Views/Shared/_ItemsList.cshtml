@@ -1,0 +1,51 @@
+﻿@model IEnumerable<object>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>@ViewBag.Title</h1>
+        @if (Model.Any())
+        {
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    @{
+                        var properties = Model.First()
+                            .GetType()
+                            .GetProperties();
+
+                        foreach (var prop in properties)
+                        {
+                            <th>@prop.Name</th>
+                        }
+                    }
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            @foreach (var prop in properties)
+                            {
+                                object value = prop.GetValue(item);
+
+                                string result;
+                                if (value is IEnumerable<object>)
+                                {
+                                    var values = value as IEnumerable<object>;
+
+                                    result = values.Any() ? string.Join(", ", values) : "-";
+                                }
+                                else
+                                {
+                                    result = value.ToString();
+                                }
+
+                                <td>@result</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

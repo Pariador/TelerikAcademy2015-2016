@@ -1,0 +1,39 @@
+extends layout
+
+block content
+	h1.text-center= user.username
+		.row.text-center: img(src=user.avatar, width='150', height='150')
+		.row.text-center Username: #{user.username}
+		.row.text-center Email: #{user.email}
+		.row.text-center First Name: #{user.firstName}
+		.row.text-center Last Name: #{user.lastName}
+		.row.text-center Facebook: #{user.facebook}
+		.row.text-center Youtube: #{user.youtube}
+
+	form.jumbotron(method='post')
+
+		.formgroup.row
+			.col-md-2: label.control-label(for='usernameInput') New Username:
+			.col-md-10: input#usernameInput.form-control(type='text', name='username', placeholder='Username')
+		.formgroup.row
+			.col-md-2: label.control-label(for='passwordInput') New Password:
+			.col-md-10: input#passwordInput.form-control(type='text', name='password', placeholder='Password')
+		.formgroup.row
+			.col-md-2: label.control-label(for='emailInput') New Email:
+			.col-md-10: input#emailInput.form-control(type='email', name='email', placeholder='Email')
+		.formgroup.row
+			.col-md-2: label.control-label(for='firstNameInput') New First Name:
+			.col-md-10: input#firstNameInput.form-control(type='text', name='firstName', placeholder='First Name')
+		.formgroup.row
+			.col-md-2: label.control-label(for='lastNameInput') New Last Name:
+			.col-md-10: input#lastNameInput.form-control(type='text', name='lastName', placeholder='Last Name')
+		.formgroup.row
+			.col-md-2: label.control-label(for='avatarInput') New Avatar Link:
+			.col-md-10: input#avatarInput.form-control(type='text', name='avatar', placeholder='Avatar Link')
+		.formgroup.row
+			.col-md-2: label.control-label(for='facebookInput') New Facebook Account:
+			.col-md-10: input#facebookInput.form-control(type='text', name='facebook', placeholder='Facebook Account')
+		.formgroup.row
+			.col-md-2: label.control-label(for='youtubeInput') New Youtube Accout:
+			.col-md-10: input#youtubeInput.form-control(type='text', name='youtube', placeholder='YouTube Accout')
+		input.btn.btn-primary(type='submit')

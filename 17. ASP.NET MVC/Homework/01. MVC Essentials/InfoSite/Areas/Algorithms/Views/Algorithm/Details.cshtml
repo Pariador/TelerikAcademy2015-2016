@@ -1,0 +1,49 @@
+﻿@model InfoSite.Data.Models.Algorithm
+
+@{
+    ViewBag.Page = Model.Name;
+}
+
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+            <h1>@ViewBag.Page</h1>
+        </div>
+
+        <div class="row">
+            <h2>
+                @Html.ActionLink(
+                    linkText: $"Category: {Model.Category.Name}",
+                    actionName: "Index",
+                    controllerName: "Main",
+                    routeValues: new  { DisplayCategoryId = Model.Category.Id },
+                    htmlAttributes: new {}
+                )
+            </h2>
+        </div>
+
+        <div class="row">
+            <h2>@nameof(Model.Summary)</h2>
+            <p>@Model.Summary</p>
+        </div>
+
+        <div class="row">
+            <h2>@nameof(Model.Description)</h2>
+            <p>@Model.Description</p>
+        </div>
+
+        <div class="row">
+            <h2>@nameof(Model.PseudoCode)</h2>
+            <code>@Model.PseudoCode</code>
+        </div>
+
+        <div class="row">
+            <h2>@Model.Name</h2>
+            <img src=@Model.ImageUrl height="200" width="200" alt=@Model.Name/>
+        </div>
+
+        <div class="row">
+            <h2>@nameof(Model.Author): @Model.Author</h2>
+        </div>
+    </div>
+</div>

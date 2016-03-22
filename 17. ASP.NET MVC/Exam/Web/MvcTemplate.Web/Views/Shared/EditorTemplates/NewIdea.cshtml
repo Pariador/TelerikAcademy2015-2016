@@ -1,0 +1,10 @@
+﻿@model MvcTemplate.Web.InputModels.NewIdea
+
+<div class="row">
+    <div>@Html.ValidationMessageFor(model => model.Title, null, new { @class = "text-danger" })</div>
+    @Html.TextBoxFor(model => model.Title, new {placeholder = "Enter your idea"})
+</div>
+<div class="row">
+    <div>@Html.ValidationMessageFor(model => model.Content, null, new { @class = "text-danger" })</div>
+    @Html.TextAreaFor(model => model.Content, new {placeholder = "Enter your description"})
+</div>

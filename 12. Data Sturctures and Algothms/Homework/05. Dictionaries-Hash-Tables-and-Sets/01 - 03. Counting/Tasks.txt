@@ -1,0 +1,18 @@
+﻿01. Write a program that counts in a given array of double values the number of occurrences of each value. Use Dictionary<TKey,TValue>.
+Example: array = {3, 4, 4, -2.5, 3, 3, 4, 3, -2.5}
+-2.5 -> 2 times
+3 -> 4 times
+4 -> 3 times
+
+02. Write a program that extracts from a given sequence of strings all elements that present in it odd number of times. Example:
+
+{C#, SQL, PHP, PHP, SQL, SQL } -> {C#, SQL}
+
+03. Write a program that counts how many times each word from given text file words.txt appears in it.
+The character casing differences should be ignored. The result words should be ordered by their number of occurrences in the text. Example:
+
+This is the TEXT. Text, text, text – THIS TEXT! Is this the text?
+is -> 2
+the -> 2
+this -> 3
+text -> 6

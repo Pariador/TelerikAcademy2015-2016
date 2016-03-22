@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	form.jumbotron(method='post')
+		legend Login
+		.formgroup.row
+			.col-md-2: label.control-label(for='usernameInput') Username:
+			.col-md-10: input#usernameInput.form-control(type='text', name='username', placeholder='Username')
+		.formgroup.row
+			.col-md-2: label.control-label(for='passwrodInput') Password:
+			.col-md-10: input#passwordInput.form-control(type='text', name='password', placeholder='Password')
+		input.btn.btn-primary(type='submit')

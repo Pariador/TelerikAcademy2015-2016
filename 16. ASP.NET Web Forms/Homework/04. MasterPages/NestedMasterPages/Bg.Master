@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Bg.Master.cs" Inherits="NestedMasterPages.BgMaster" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="SiteContent">
+    <nav>
+        <a href="/HomeEn">En</a>
+        <a href="/HomeBg">Начална Страница</a>
+        <a href="/OffersBg">Оферти</a>
+    </nav>
+    
+    <asp:ContentPlaceHolder runat="server" ID="MainContentBg"></asp:ContentPlaceHolder>
+</asp:Content>

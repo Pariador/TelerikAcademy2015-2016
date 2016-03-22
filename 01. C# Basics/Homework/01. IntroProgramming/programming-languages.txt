@@ -1,0 +1,54 @@
+1. C#
+C Sharp is a  multi-paradigm programming language developed by Mircosoft as part of their .NET initiative.
+It is intended to be a simple, general-purpose, object-oriented programming language.
+C# is one of the programming languages designed for the Common Language Infrastructure.
+The name "C sharp" was inspired by musical notation where a sharp indicates that the written note should be made a semitone higher in pitch.
+This is similar to the language name of C++, where "++" indicates that a variable should be incremented by 1.
+The sharp symbol also resembles a ligature of four "+" symbols (in a two-by-two grid), further implying that the language is an increment of C++.
+
+2. C++
+C++ is a general-purpose programming language.
+It has imperative, object-oriented and generic programming features, while also providing the facilities for low-level memory manipulation.
+Although designed with system programming in mind C++ has found a wide range of use including desktop applications,
+servers, performance critical applications, and entertainment software.
+It is a compiled language and implementations of are available on many different platforms.
+Many other programming languages have been influenced by C++, including C#, Java, and newer versions of C (after 1998).
+
+3. Java
+Java is a functional computer programming language that is concurrent, class-based, object-oriented,
+and specifically designed to have as few implementation dependencies as possible.
+It is intended to let application developers "write once, run anywhere" (WORA),
+meaning that code that runs on one platform does not need to be recompiled to run on another.
+Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture.
+The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.
+
+4. C
+C is a general-purpose, imperative computer programming language.
+By design, C provides constructs that map efficiently to typical machine instructions,
+and therefore it has found lasting use in applications that had formerly been coded in assembly language,
+including operating systems as well as various application software for computers ranging from supercomputers to embedded systems.
+C compilers are available on many different platforms.
+Many later languages have borrowed directly or indirectly from C, 
+including D, Go, Rust, Java, JavaScript, Limbo, LPC, C#, Objective-C, Perl, PHP, Python, and Unix's C shell.
+These languages have drawn many of their control structures and other basic features from C, usually with overall syntactical similarity to C.
+
+5. Objective-C
+Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language.
+It is the main programming language used by Apple for the OS X and iOS operating systems,
+and their respective application programming interfaces (APIs), Cocoa and Cocoa Touch.
+Objective-C source code program files usually have .m filename extensions, while Objective-C header files have .h extensions, the same as for C header files.
+Objective-C++ files are denoted with a .mm file extension.
+
+6. JavaScript
+JavaScript is a dynamic computer programming language.
+It is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user,
+control the browser, communicate asynchronously, and alter the document content that is displayed.
+JavaScript is classified as a prototype-based scripting language with dynamic typing and first-class functions.
+This mix of features makes it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles.
+Despite some naming, syntactic, and standard library similarities, JavaScript and Java are otherwise unrelated and have very different semantics.
+The syntax of JavaScript is actually derived from C, while the semantics and design are influenced by Self and Scheme programming languages.
+JavaScript is also used in environments that aren't web-based, such as PDF documents, site-specific browsers, and desktop widgets.
+Newer and faster JavaScript virtual machines (VMs) and platforms built upon them have also increased the popularity of JavaScript for server-side web applications.
+On the client side, JavaScript has been traditionally implemented as an interpreted language, but more recent browsers perform just-in-time compilation.
+
+Source: Wikipedia

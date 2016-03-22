@@ -1,0 +1,29 @@
+﻿@model MVC.Models.HomeModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        .result {
+           background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sum 2 numbers:</h1>
+    <form method="get" action="/">
+        <label for="first">First: </label><input id="first" type="text" name="first" value="@Model.First"/>
+        <br/>
+        <label for="second">Second: </label><input id="second" type="text" name="second" value="@Model.Second"/>
+        <br/>
+        <label for="result">Result: </label><span id="result" class="result">@Model.Result</span>
+        <br/>
+        <button type="submit">Sum</button>
+    </form>
+</body>
+</html>

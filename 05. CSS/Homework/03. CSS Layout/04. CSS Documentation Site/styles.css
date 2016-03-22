@@ -1,0 +1,240 @@
+/*Set up*/
+body, h1, p, a, ul, menu, li, button, input{
+	margin: 0;
+	padding: 0;
+	font: normal normal normal 12px/12px verdana;
+}
+ul, menu{
+	list-style-type: none;
+}
+br{
+	display: none;
+}
+body{
+	background-color: #f1f1f1;
+}
+/*!Set up*/	
+
+body > nav{
+	/*visibility: hidden;*/
+	/* background-color: yellowgreen; */
+
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+
+	box-sizing: border-box;
+	height: 100%;
+	width: 12%;
+	min-width: 128px;
+	padding-left: 4px;
+}
+main{
+	/*visibility: hidden;*/
+	/* background-color: teal; */
+	background-color: white;
+
+	position: absolute;
+	z-index: 3;
+	top: 4px;
+	left: 12%;
+
+	box-sizing: border-box;
+	height: 565px;
+	min-width: 484px;
+	width: 72.2%;
+	border: 2px solid #a2a2a2;
+	padding: 0px 5px;
+}
+body > aside{
+	/*visibility: hidden;*/
+	/*background-color: goldenrod;*/
+
+	position: absolute;
+	z-index: 0;
+	right: 7px;
+	top: 4px;
+
+	box-sizing: border-box;
+	height: 95%;
+	min-width: 146px;
+	width: 15%;
+}
+
+/*NAV Styles*/
+body > nav{
+	background-image: url(images/house-56x56.png); 
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-position: 4px 16px;
+}
+body > nav > *{
+	margin-top: 18px;
+}
+body > nav > section > h1{
+	color: #8c0200;
+	font-weight: bold;
+}
+body > nav a:hover{
+	color: #8c0200;
+	text-decoration: underline;
+}
+body > nav  a{
+	color: black;
+	text-decoration: none;
+}
+body > nav > header{
+	background-size: 14px 14px;
+	padding-left: 17px;
+}
+body > nav > header > a{
+	line-height: 14px;
+	font-weight: bold;
+}
+
+/*MAIN Styles*/
+main > article > header > nav, main > article > header > h1{
+	margin: 17px 0px;
+}
+main > article > header > h1{
+	font-weight: bold;
+	font-size: 18px;
+}
+main > article > header{
+	position: relative;
+}
+main > article > header::after{
+	content: ""; 
+	
+	display: block;
+	border: 1px inset lightgrey;
+	width: 100%;
+
+	position: absolute;
+	bottom: -11px;
+}
+main > article button{
+	box-sizing: border-box;
+	border: 2px solid black;
+	background-color: white;
+	width: 100px;
+	height: 21px;
+}
+main > article button:first-child{
+	background-image: url(images/left-arrow-37x64.png);
+	background-repeat: no-repeat;
+	background-size: 4px 7px;
+	background-position: 2% center;
+	margin-right: 5px;
+}
+main > article button:last-child{
+	background-image: url(images/right-arrow-37x64.png);
+	background-repeat: no-repeat;
+	background-size: 4px 7px;
+	background-position: 98% center;
+}
+body > :not(nav) section h1{
+	background-color: #808080;
+	color: white;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: bold;
+}
+main > article > :not(header) > h1{
+	padding-left: 5px;
+}
+.textbox{
+	display: inline-block;
+}
+main > article > section:first-of-type p{
+	font-weight: bold;
+}
+main > article > section:first-of-type p:last-of-type{
+	width: 354px;
+}
+main > article > section:first-of-type > img{
+	vertical-align: top;
+}
+main > article > section:first-of-type > img,
+.textbox > p{
+	margin: 14px 0px;
+}
+.textbox{
+	margin-left: 18px;
+	margin-bottom: 24px;
+}
+body > :not(nav) a{
+	color: #bc1512;
+}
+main > article button > a{
+	color: black;
+	text-decoration: none;
+}
+main > article > section:not(:first-of-type):not(:nth-of-type(2)){
+	margin-top: 10px;
+}
+main > article > section:not(:first-of-type) p{
+	margin: 14px 0px;
+}
+main > article > section:nth-of-type(2) > p{
+	width: 500px;
+}
+main > article > section:nth-of-type(3) > p{
+	width: 466px;
+}
+main > article > footer::before, main > article > footer::after{
+	content: ""; 
+	
+	display: block;
+	border: 1px inset lightgrey;
+	width: 100%;
+}
+main > article > footer{
+	margin-top: 11px;
+}
+main > article > footer > nav{
+	margin: 6px 0px;
+}
+
+/*ASIDE Styles*/
+aside{
+	text-align: center;
+}
+aside a{
+	line-height: 14px;
+}
+aside > section, #web-hosting > div{
+	margin-bottom: 1px;
+}
+aside > :not(#web-hosting),
+#web-hosting > :not(h1){
+	box-sizing: border-box;
+	background-color: white;
+	border: 1px solid gray;
+}
+aside > section > form{
+	margin: 7px 11px;
+}
+aside > section > form > input[type=text]{
+	width: 94px;
+	height: 19px;
+
+	margin-right: 5px;
+}
+aside > section > form > input[type=submit]{
+	padding-left: 2px;
+}
+aside .link-list{
+	margin: 7px 0px;
+}
+.single-link{
+	padding: 7px 0px;
+}
+aside > :nth-child(2){
+	padding-top: 2px;
+}
+aside > :nth-child(2) > a{
+	display: block;
+	margin: 7px 0px;
+}

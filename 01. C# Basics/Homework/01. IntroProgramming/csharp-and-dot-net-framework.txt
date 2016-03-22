@@ -1,0 +1,15 @@
+.NET Framework is a software framework developed by Mircrosoft within its .NET initiative and runs primarily on Microsoft Windows.
+It includes a large class library known as Framework Class Library (FCL) and provides language interoperability across several programming languages.
+FCL includes Base Class Library (BCL), Data Tier (ADO.NET, EF, LINQ and XML),
+Communication and Workflow Teir (WCF, WWF), ASP.NET, Windows Forms, WPF/XAML, WinJS/Win8. 
+Programs written for .NET Framework execute in a software environment, known as Common Language Runtime (CLR).
+Code written in a language compatible with .NET Framework is compiled to the non-platform specific Common Intermediate Language (CIL).
+After that the CLR compiles CIL to machine readable code that can be executed on the current platform, implementing features such as Security and Memory management.
+FCL and CLR together constitute .NET Framework. Microsoft also produces an integrated development environment largely for .NET software called Visual Studio.
+
+A programming language (like C#) is a formal constructed language designed to communicate instructions to a machine, particularly a computer.
+C# is a  multi-paradigm programming language developed by Mircosoft designed to work with .NET Framework.
+
+C# and .NET Framework are two related but different things that are both part of the .NET initiative.
+
+Source: Wikipedia
