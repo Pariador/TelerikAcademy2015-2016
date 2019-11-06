@@ -13,7 +13,7 @@
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "js-cache": "^1.0.2",
-    "mongoose": "^4.3.5",
+    "mongoose": "^5.7.8",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "require-dir": "^0.3.0",
